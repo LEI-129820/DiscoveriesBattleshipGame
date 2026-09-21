@@ -23,6 +23,16 @@
 
 ---
 
+## História das embarcações
+
+- [Galeão](https://pt.wikipedia.org/wiki/Gale%C3%A3o)
+- [Fragata](https://pt.wikipedia.org/wiki/Fragata)
+- [Nau](https://pt.wikipedia.org/wiki/Nau)
+- [Caravela](https://pt.wikipedia.org/wiki/Caravela)
+- [Barca](https://pt.wikipedia.org/wiki/Barca)
+
+---
+
 ### Regras
 * **Turnos:** Os jogadores jogam alternadamente.
 * **Jogadas:** Em cada turno, um jogador atira 3 tiros sobre a frota adversária, referindo as respetivas coordenadas (Linha, Coluna).
