@@ -23,4 +23,11 @@
 
 ---
 
-# Regras
+### Regras
+* **Turnos:** Os jogadores jogam alternadamente.
+* **Jogadas:** Em cada turno, um jogador atira 3 tiros sobre a frota adversária, referindo as respetivas coordenadas (Linha, Coluna).
+* **Resultado das jogadas:** O adversário deve referir o resultado da jogada, após os 3 tiros, mencionado se algum tiro atingiu um navio, ou mais, (incluindo o tipo de navio alvejado) ou se acertou no mar.
+* **Resultado:** Os jogadores devem registar, na grelha do oponente, os resultados dos sues tiros, identificando os navios afundados.
+
+### Vencedor
+* O primeiro jogador a atingir e afundou os 11 navios da frota inimiga ganha.
