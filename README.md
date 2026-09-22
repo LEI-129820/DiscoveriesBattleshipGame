@@ -26,10 +26,34 @@
 ## História das embarcações
 
 - [Galeão](https://pt.wikipedia.org/wiki/Gale%C3%A3o)
+
+<p align="center">
+  <img src="images/galeao.jpg" alt="Galeão" width="300">
+</p>
+
 - [Fragata](https://pt.wikipedia.org/wiki/Fragata)
+
+<p align="center">
+  <img src="images/fragata.jpg" alt="Fragata" width="300">
+</p>
+
 - [Nau](https://pt.wikipedia.org/wiki/Nau)
+
+<p align="center">
+  <img src="images/nau.jpg" alt="Nau" width="300">
+</p>
+
 - [Caravela](https://pt.wikipedia.org/wiki/Caravela)
+
+<p align="center">
+  <img src="images/caravela.jpg" alt="Caravela" width="300">
+</p>
+
 - [Barca](https://pt.wikipedia.org/wiki/Barca)
+
+<p align="center">
+  <img src="images/barca.jpg" alt="Barca" width="300">
+</p>
 
 ---
 
