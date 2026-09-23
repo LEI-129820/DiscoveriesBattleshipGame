@@ -15,7 +15,7 @@ Basic academic version of Battleship game to build upon.
 | Nº de Aluno | Nome                   |
 |-------------|------------------------|
 | [129820]    | [Dinis Sousa]          |
-| [129850]    | [Duarte Oliveira]      |
+| [129851]    | [Duarte Oliveira]      |
 | [129853]    | [Daniel Masqueiro]     |
 
 ---
