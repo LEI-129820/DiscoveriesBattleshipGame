@@ -43,6 +43,14 @@ Este é um projeto desenvolvido no âmbito da unidade curricular de **Engenharia
 5. Cada jogador regista na sua grelha do adversário os resultados conhecidos até então.
 6. Vence quem afundar primeiro toda a frota adversária.
 
+## 📚 Curiosidades Históricas (Navios dos Descobrimentos)
+
+Podes explorar mais sobre as embarcações utilizadas na época dos Descobrimentos nos seguintes links:
+- [Galeão](https://pt.wikipedia.org/wiki/Gale%C3%A3o) - O equivalente ao Porta-aviões.
+- [Fragata](https://pt.wikipedia.org/wiki/Fragata) - O equivalente ao Navio de 4 canhões.
+- [Nau](https://pt.wikipedia.org/wiki/Nau) - O equivalente ao Navio de 3 canhões.
+- [Caravela](https://pt.wikipedia.org/wiki/Caravela) - O equivalente ao Navio de 2 canhões.
+
 ## 🔧 Tecnologias
 
 - Java
