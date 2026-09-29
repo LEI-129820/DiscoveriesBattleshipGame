@@ -5,7 +5,7 @@ Basic academic version of Battleship game to build upon.
 
 # 🚢 DiscoveriesBattleshipGame
 
-## Grupo: [Nickname do Grupo]
+## Grupo: [Fuzzys]
 
 ### Curso
 [LEI]
