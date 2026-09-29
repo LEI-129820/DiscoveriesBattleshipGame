@@ -13,7 +13,11 @@ public interface IFleet {
     Integer BOARD_SIZE = 10;
     
     /**
-     * Número máximo de navios permitidos numa frota.
+    /**
+     * Valor usado por {@link #addShip(IShip)} para limitar o número de navios.
+     * Como a verificação é {@code ships.size() <= FLEET_SIZE}, a frota aceita
+     * até {@code FLEET_SIZE + 1} navios (11, o total de navios do jogo).
+     */
      */
     Integer FLEET_SIZE = 10;
 
