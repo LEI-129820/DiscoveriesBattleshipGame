@@ -1,14 +1,15 @@
-/**
- *
- */
 package iscteiul.ista.battleship;
 
 import java.util.Scanner;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Classe responsável por agregar e executar diferentes tarefas de teste e simulação
+ * para as mecânicas do jogo Battleship, incluindo criação de navios, formação de frotas
+ * e simulação de turnos de disparo.
+ */
 public class Tasks {
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -26,7 +27,6 @@ public class Tasks {
     private static final String BATOTA = "mapa";
     private static final String STATUS = "estado";
 
-
     /////////////////////////////////////////////////////////////////////////////
     // hereafter one may find some code that can be converted to automatic tests,
     // as long as appropriate changes are made. It also shows that we should
@@ -35,8 +35,8 @@ public class Tasks {
     /////////////////////////////////////////////////////////////////////////////
 
     /**
-     * This task tests the building up of ships: For each ship, reads positions and
-     * indicates whether the ship occupies each one of such positions or not
+     * Esta tarefa testa a construção de navios: Para cada navio, lê posições e
+     * indica se o navio ocupa cada uma dessas posições ou não.
      */
     public static void taskA() {
         Scanner in = new Scanner(System.in);
@@ -51,7 +51,7 @@ public class Tasks {
     }
 
     /**
-     * This task tests the building up of fleets
+     * Esta tarefa testa a construção e adição de navios a frotas.
      */
     public static void taskB() {
         Scanner in = new Scanner(System.in);
@@ -76,8 +76,8 @@ public class Tasks {
     }
 
     /**
-     * This task tests the building up of fleets and takes into consideration the
-     * possibility of cheating
+     * Esta tarefa testa a construção de frotas e tem em consideração a
+     * possibilidade de fazer batota, visualizando o estado da frota.
      */
     public static void taskC() {
         Scanner in = new Scanner(System.in);
@@ -105,7 +105,8 @@ public class Tasks {
     }
 
     /**
-     * This task also tests the fighting element of a round of three shots
+     * Esta tarefa testa também o elemento de combate através de uma ronda de
+     * três tiros, e lida com um jogo completo simulado.
      */
     public static void taskD() {
 
