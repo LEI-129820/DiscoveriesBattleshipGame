@@ -1,15 +1,28 @@
-/**
- *
- */
 package iscteiul.ista.battleship;
 
+/**
+ * Representa uma nau (dimensão 3), um dos navios da frota na versão dos
+ * Descobrimentos do jogo da Batalha Naval.
+ * <p>
+ * Com orientação norte ou sul, ocupa 3 posições em linhas consecutivas da
+ * mesma coluna; com orientação este ou oeste, ocupa 3 posições em colunas
+ * consecutivas da mesma linha, sempre a partir da posição de referência.
+ *
+ * @author LEI-129820
+ * @see Ship
+ */
 public class Carrack extends Ship {
     private static final Integer SIZE = 3;
     private static final String NAME = "Nau";
 
     /**
-     * @param bearing
-     * @param pos
+     * Cria uma nau na posição e orientação indicadas.
+     *
+     * @param bearing orientação do navio (norte, sul, este ou oeste)
+     * @param pos     posição de referência do navio (extremo superior
+     *                esquerdo)
+     * @throws IllegalArgumentException se a orientação não for norte, sul,
+     *                                  este ou oeste
      */
     public Carrack(Compass bearing, IPosition pos) throws IllegalArgumentException {
         super(Carrack.NAME, bearing, pos);
@@ -29,10 +42,10 @@ public class Carrack extends Ship {
         }
     }
 
-    /*
-     * (non-Javadoc)
+    /**
+     * Devolve a dimensão da nau.
      *
-     * @see battleship.Ship#getSize()
+     * @return {@code 3}
      */
     @Override
     public Integer getSize() {
