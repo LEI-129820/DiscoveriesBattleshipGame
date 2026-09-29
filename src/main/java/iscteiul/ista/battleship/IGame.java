@@ -3,17 +3,17 @@ package iscteiul.ista.battleship;
 import java.util.List;
 
 /**
- * Interface que define as regras e o estado do Discoveries Battleship Game[cite: 2].
- * Fornece métodos para interagir com o jogo em grelhas de 10x10 quadrados[cite: 2], 
- * incluindo disparos sobre os navios da época dos descobrimentos[cite: 2], estatísticas e impressão do estado.
+ * Interface que define as regras e o estado do Discoveries Battleship Game.
+ * Fornece métodos para interagir com o jogo em grelhas de 10x10 quadrados, 
+ * incluindo disparos sobre os navios da época dos descobrimentos, estatísticas e impressão do estado.
  */
 public interface IGame {
     
     /**
-     * Efetua um disparo na grelha do adversário numa determinada posição[cite: 2].
+     * Efetua um disparo na grelha do adversário numa determinada posição.
      * 
-     * @param pos A posição (IPosition) alvo do disparo na grelha 10x10[cite: 2].
-     * @return O navio (IShip) atingido pelo disparo, ou null se for um "tiro na água"[cite: 2].
+     * @param pos A posição (IPosition) alvo do disparo na grelha 10x10.
+     * @return O navio (IShip) atingido pelo disparo, ou null se for um "tiro na água".
      */
     IShip fire(IPosition pos);
 
@@ -39,21 +39,21 @@ public interface IGame {
     int getInvalidShots();
 
     /**
-     * Obtém o número de disparos que acertaram com sucesso em navios da frota adversária[cite: 2].
+     * Obtém o número de disparos que acertaram com sucesso em navios da frota adversária.
      * 
      * @return O número total de acertos (hits).
      */
     int getHits();
 
     /**
-     * Obtém o número de navios que já foram totalmente afundados na grelha do oponente[cite: 2].
+     * Obtém o número de navios que já foram totalmente afundados na grelha do oponente.
      * 
      * @return O número de navios afundados.
      */
     int getSunkShips();
 
     /**
-     * Obtém o número de navios da frota que ainda não foram totalmente afundados. O primeiro a atingir todos os navios adversários ganha[cite: 2].
+     * Obtém o número de navios da frota que ainda não foram totalmente afundados. O primeiro a atingir todos os navios adversários ganha.
      * 
      * @return O número de navios restantes no jogo.
      */
