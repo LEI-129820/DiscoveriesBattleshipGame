@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Implementação da interface {@link IGame} para o Discoveries Battleship Game[cite: 2].
- * Esta classe gere a lógica e o estado de uma partida na época dos Descobrimentos[cite: 2],
- * controlando a frota numa grelha de 10x10 quadrados[cite: 2], os disparos efetuados e 
- * as estatísticas de jogo (navios históricos afundados, disparos inválidos, etc.)[cite: 2].
+ * Implementação da interface {@link IGame} para o Discoveries Battleship Game.
+ * Esta classe gere a lógica e o estado de uma partida na época dos Descobrimentos,
+ * controlando a frota numa grelha de 10x10 quadrados, os disparos efetuados e 
+ * as estatísticas de jogo (navios históricos afundados, disparos inválidos, etc.).
  *
  * @author fba
  */
@@ -23,7 +23,7 @@ public class Game implements IGame {
     /**
      * Construtor que inicializa uma nova partida com a frota especificada.
      *
-     * @param fleet A frota (IFleet) contendo os navios posicionados na grelha[cite: 2].
+     * @param fleet A frota (IFleet) contendo os navios posicionados na grelha.
      */
     public Game(IFleet fleet) {
         shots = new ArrayList<>();
@@ -33,10 +33,10 @@ public class Game implements IGame {
     }
 
     /**
-     * Efetua um disparo sobre a frota adversária numa determinada coordenada[cite: 2].
+     * Efetua um disparo sobre a frota adversária numa determinada coordenada.
      * Regista se o tiro foi inválido, repetido ou se acertou num navio.
      *
-     * @param pos A posição (IPosition) na grelha 10x10 onde o disparo incide[cite: 2].
+     * @param pos A posição (IPosition) na grelha 10x10 onde o disparo incide.
      * @return O navio (IShip) caso o disparo tenha resultado no seu afundamento total, ou null caso contrário.
      */
     @Override
@@ -83,7 +83,7 @@ public class Game implements IGame {
     }
 
     /**
-     * Devolve a quantidade de disparos realizados fora dos limites da grelha de 10x10[cite: 2].
+     * Devolve a quantidade de disparos realizados fora dos limites da grelha de 10x10.
      *
      * @return O número de disparos considerados inválidos.
      */
@@ -136,7 +136,7 @@ public class Game implements IGame {
     }
 
     /**
-     * Imprime na consola a representação visual de um tabuleiro de 10x10[cite: 2],
+     * Imprime na consola a representação visual de um tabuleiro de 10x10,
      * assinalando posições específicas com um marcador.
      *
      * @param positions Lista das posições (IPosition) que deverão conter o marcador.
@@ -161,14 +161,14 @@ public class Game implements IGame {
     }
 
     /**
-     * Imprime a grelha exibindo todos os disparos válidos efetuados, marcados com 'X'[cite: 2].
+     * Imprime a grelha exibindo todos os disparos válidos efetuados, marcados com 'X'.
      */
     public void printValidShots() {
         printBoard(getShots(), 'X');
     }
 
     /**
-     * Imprime a grelha revelando a disposição atual da frota no mar, assinalando os navios com '#'[cite: 2].
+     * Imprime a grelha revelando a disposição atual da frota no mar, assinalando os navios com '#'.
      */
     public void printFleet() {
         List<IPosition> shipPositions = new ArrayList<IPosition>();
