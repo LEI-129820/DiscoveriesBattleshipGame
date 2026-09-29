@@ -1,11 +1,13 @@
-/**
- *
- */
 package iscteiul.ista.battleship;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Representa uma frota de navios no jogo da Batalha Naval.
+ * Implementa a interface {@link IFleet}, gerindo a adição, estado e localização
+ * dos navios no tabuleiro.
+ */
 public class Fleet implements IFleet {
     /**
      * This operation prints all the given ships
@@ -19,12 +21,24 @@ public class Fleet implements IFleet {
 
     // -----------------------------------------------------
 
+    /**
+     * Lista interna que armazena os navios que compõem a frota.
+     */
     private List<IShip> ships;
 
+    /**
+     * Construtor por omissão.
+     * Inicializa uma nova frota com uma lista vazia de navios.
+     */
     public Fleet() {
         ships = new ArrayList<>();
     }
 
+    /**
+     * Obtém a lista de todos os navios atualmente na frota.
+     *
+     * @return Uma lista de objetos {@link IShip} pertencentes à frota.
+     */
     @Override
     public List<IShip> getShips() {
         return ships;
@@ -88,11 +102,24 @@ public class Fleet implements IFleet {
         return null;
     }
 
+    /**
+     * Verifica se um determinado navio está totalmente contido dentro das fronteiras do tabuleiro.
+     *
+     * @param s O navio a ser verificado.
+     * @return {@code true} se o navio estiver dentro do tabuleiro, {@code false} caso contrário.
+     */
     private boolean isInsideBoard(IShip s) {
         return (s.getLeftMostPos() >= 0 && s.getRightMostPos() <= BOARD_SIZE - 1 && s.getTopMostPos() >= 0
                 && s.getBottomMostPos() <= BOARD_SIZE - 1);
     }
 
+    /**
+     * Verifica se existe risco de colisão (proximidade excessiva) entre um determinado navio
+     * e os restantes navios já existentes na frota.
+     *
+     * @param s O navio a ser testado.
+     * @return {@code true} se o navio estiver demasiado perto de um já existente, {@code false} caso contrário.
+     */
     private boolean colisionRisk(IShip s) {
         for (int i = 0; i < ships.size(); i++) {
             if (ships.get(i).tooCloseTo(s))
@@ -100,7 +127,6 @@ public class Fleet implements IFleet {
         }
         return false;
     }
-
 
     /**
      * This operation shows the state of a fleet
