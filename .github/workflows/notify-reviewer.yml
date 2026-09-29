@@ -1,0 +1,35 @@
+name: Notify Reviewer
+
+on:
+  pull_request:
+    types: [opened, review_requested]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mencionar o revisor no Pull Request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const single = context.payload.requested_reviewer;
+            const reviewers = single
+              ? [single]
+              : (pr.requested_reviewers || []);
+
+            if (reviewers.length === 0) {
+              core.info('Sem revisores atribuídos.');
+              return;
+            }
+
+            const mentions = reviewers.map(r => `@${r.login}`).join(' ');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              body: `Olá ${mentions}, foi-te pedida a revisão do PR #${pr.number} (**${pr.title}**), aberto por @${pr.user.login}.`
+            });
