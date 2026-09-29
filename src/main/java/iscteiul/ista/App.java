@@ -4,8 +4,8 @@ import iscteiul.ista.battleship.Fleet;
 import iscteiul.ista.battleship.Tasks;
 
 /**
- * Classe principal da aplicação Battleship.
- * Serve como ponto de entrada principal para a execução da aplicação e demonstração das tarefas.
+ * Classe principal do Discoveries Battleship Game[cite: 2].
+ * Serve como ponto de entrada principal para a execução da aplicação e demonstração das tarefas do jogo da época dos Descobrimentos[cite: 2].
  * 
  * @author britoeabreu
  * @author adrianolopes
@@ -30,5 +30,3 @@ public class App
         //	Tasks.taskD();
     }
 }
-
-
