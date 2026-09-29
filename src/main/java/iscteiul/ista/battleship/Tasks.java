@@ -7,9 +7,9 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * Classe responsável por agregar e executar diferentes tarefas de teste e simulação
- * para as mecânicas do Discoveries Battleship Game[cite: 2].
- * Inclui a criação de navios da época dos Descobrimentos (Galeão, Fragata, Nau, Caravela e Barca)[cite: 2], 
- * formação de frotas para as grelhas de 10x10[cite: 2] e simulação de turnos de disparo.
+ * para as mecânicas do Discoveries Battleship Game.
+ * Inclui a criação de navios da época dos Descobrimentos (Galeão, Fragata, Nau, Caravela e Barca), 
+ * formação de frotas para as grelhas de 10x10 e simulação de turnos de disparo.
  */
 public class Tasks {
     private static final Logger LOGGER = LogManager.getLogger();
@@ -36,8 +36,8 @@ public class Tasks {
     /////////////////////////////////////////////////////////////////////////////
 
     /**
-     * Esta tarefa testa a construção de navios da época dos Descobrimentos[cite: 2]: Para cada navio, lê posições e
-     * indica se o navio ocupa cada uma dessas posições ou não na grelha quadriculada[cite: 2].
+     * Esta tarefa testa a construção de navios da época dos Descobrimentos: Para cada navio, lê posições e
+     * indica se o navio ocupa cada uma dessas posições ou não na grelha quadriculada.
      */
     public static void taskA() {
         Scanner in = new Scanner(System.in);
@@ -52,7 +52,7 @@ public class Tasks {
     }
 
     /**
-     * Esta tarefa testa a construção e adição de navios a frotas do Discoveries Battleship Game[cite: 2].
+     * Esta tarefa testa a construção e adição de navios a frotas do Discoveries Battleship Game.
      */
     public static void taskB() {
         Scanner in = new Scanner(System.in);
@@ -77,8 +77,8 @@ public class Tasks {
     }
 
     /**
-     * Esta tarefa testa a construção de frotas históricas[cite: 2] e tem em consideração a
-     * possibilidade de fazer batota, visualizando o estado da frota e a posição dos navios[cite: 2].
+     * Esta tarefa testa a construção de frotas históricas e tem em consideração a
+     * possibilidade de fazer batota, visualizando o estado da frota e a posição dos navios.
      */
     public static void taskC() {
         Scanner in = new Scanner(System.in);
@@ -107,7 +107,7 @@ public class Tasks {
 
     /**
      * Esta tarefa testa também o elemento de combate através de uma rajada de
-     * três tiros sobre a frota adversária[cite: 2], lidando com um jogo completo simulado.
+     * três tiros sobre a frota adversária, lidando com um jogo completo simulado.
      */
     public static void taskD() {
 
