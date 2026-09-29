@@ -2,8 +2,8 @@ package iscteiul.ista.battleship;
 
 /**
  * Representa um Galeão, um tipo específico de navio na Batalha Naval dos Descobrimentos.
- * Este navio ocupa 5 posições no tabuleiro e a sua disposição geométrica varia 
- * consoante a orientação (Norte, Sul, Este, Oeste).
+ * Este navio tem a forma de um "T" e ocupa 5 posições no tabuleiro, variando a sua 
+ * disposição geométrica consoante a orientação (Norte, Sul, Este, Oeste).
  */
 public class Galleon extends Ship {
     
@@ -19,6 +19,8 @@ public class Galleon extends Ship {
      *
      * @param bearing A orientação do navio (Norte, Sul, Este, Oeste).
      * @param pos     A posição de referência a partir da qual o navio é construído no tabuleiro.
+     *                Nota: Consoante a orientação (Sul ou Este), as posições ocupadas podem
+     *                estender-se para colunas à esquerda deste ponto.
      * @throws IllegalArgumentException Se a orientação fornecida for inválida.
      * @throws NullPointerException     Se a orientação fornecida (bearing) for nula.
      */
@@ -72,6 +74,7 @@ public class Galleon extends Ship {
 
     /**
      * Preenche as posições ocupadas pelo Galeão quando está orientado para Sul.
+     * Nota: Utiliza colunas à esquerda da posição de referência para completar a forma em "T".
      *
      * @param pos A posição de referência inicial.
      */
@@ -86,6 +89,7 @@ public class Galleon extends Ship {
 
     /**
      * Preenche as posições ocupadas pelo Galeão quando está orientado para Este.
+     * Nota: Utiliza colunas à esquerda da posição de referência para completar a forma em "T".
      *
      * @param pos A posição de referência inicial.
      */
