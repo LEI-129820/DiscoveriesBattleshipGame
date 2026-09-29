@@ -47,10 +47,10 @@ public class Galleon extends Ship {
         }
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.Ship#getSize()
+    /**
+     * Obtém o tamanho deste navio em número de posições ocupadas no tabuleiro.
+     * 
+     * @return O tamanho do Galeão (5 posições).
      */
     @Override
     public Integer getSize() {
