@@ -1,18 +1,33 @@
-/**
- *
- */
 package iscteiul.ista.battleship;
 
 import java.util.Objects;
 
+/**
+ * Representa uma coordenada ou posição no tabuleiro da Batalha Naval.
+ * Mantém o estado da posição (linha, coluna), verificando se está ocupada 
+ * por um navio e se já foi atingida por um tiro.
+ */
 public class Position implements IPosition {
+    
+    /** Linha do tabuleiro. */
     private int row;
+    
+    /** Coluna do tabuleiro. */
     private int column;
+    
+    /** Indica se a posição está ocupada por um navio. */
     private boolean isOccupied;
+    
+    /** Indica se a posição já foi alvo de um tiro. */
     private boolean isHit;
 
     /**
+     * Construtor da classe Position.
+     * Inicializa a posição com uma linha e coluna específicas.
+     * Por omissão, a posição começa sem estar ocupada nem atingida.
      *
+     * @param row    A linha correspondente à posição.
+     * @param column A coluna correspondente à posição.
      */
     public Position(int row, int column) {
         this.row = row;
@@ -41,7 +56,11 @@ public class Position implements IPosition {
         return column;
     }
 
-
+    /**
+     * Retorna o código hash para esta posição, com base na linha, coluna e estados de impacto e ocupação.
+     *
+     * @return O valor do código hash.
+     */
     @Override
     public int hashCode() {
         return Objects.hash(column, isHit, isOccupied, row);
@@ -114,6 +133,11 @@ public class Position implements IPosition {
         return isHit;
     }
 
+    /**
+     * Retorna uma representação textual da posição.
+     *
+     * @return Uma string no formato "Linha = X Coluna = Y".
+     */
     @Override
     public String toString() {
         return ("Linha = " + row + " Coluna = " + column);
