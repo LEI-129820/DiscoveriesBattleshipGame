@@ -17,8 +17,8 @@ public class Caravel extends Ship {
      * Construtor da classe Caravel.
      * Cria uma nova Caravela orientada e posicionada a partir de um ponto inicial no tabuleiro.
      *
-     * @param bearing the bearing where the Caravel heads to
-     * @param pos     initial point for positioning the Caravel
+     * @param bearing A orientação para a qual a Caravela aponta.
+     * @param pos     O ponto inicial (posição de referência) para posicionar a Caravela.
      * @throws NullPointerException     Se a orientação fornecida (bearing) for nula.
      * @throws IllegalArgumentException Se a orientação fornecida for inválida.
      */
@@ -45,10 +45,10 @@ public class Caravel extends Ship {
 
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.Ship#getSize()
+    /**
+     * Obtém o tamanho deste navio em número de posições ocupadas no tabuleiro.
+     * 
+     * @return O tamanho da Caravela (2 posições).
      */
     @Override
     public Integer getSize() {
