@@ -8,24 +8,35 @@ import org.apache.logging.log4j.Logger;
 /**
  * Classe responsável por agregar e executar diferentes tarefas de teste e simulação
  * para as mecânicas do Discoveries Battleship Game.
- * Inclui a criação de navios da época dos Descobrimentos (Galeão, Fragata, Nau, Caravela e Barca), 
+ * Inclui a criação de navios da época dos Descobrimentos (Galeão, Fragata, Nau, Caravela e Barca),
  * formação de frotas para as grelhas de 10x10 e simulação de turnos de disparo.
  */
 public class Tasks {
+    /** Registador (<em>logger</em>) usado para as mensagens de jogo. */
     private static final Logger LOGGER = LogManager.getLogger();
 
+    /** Número de tiros de cada rajada. */
     private static final int NUMBER_SHOTS = 3;
 
+    /** Mensagem de despedida registada quando o jogador desiste. */
     private static final String GOODBYE_MESSAGE = "Bons ventos!";
 
-    /**
-     * Strings to be used by the user
-     */
+    /** Comando do utilizador para criar uma nova frota. */
     private static final String NOVAFROTA = "nova";
+
+    /** Comando do utilizador para desistir do jogo. */
     private static final String DESISTIR = "desisto";
+
+    /** Comando do utilizador para disparar uma rajada de tiros. */
     private static final String RAJADA = "rajada";
+
+    /** Comando do utilizador para ver os tiros válidos já efetuados. */
     private static final String VERTIROS = "ver";
+
+    /** Comando do utilizador para mostrar o tabuleiro com a frota (modo "batota"). */
     private static final String BATOTA = "mapa";
+
+    /** Comando do utilizador para ver o estado da frota. */
     private static final String STATUS = "estado";
 
     /////////////////////////////////////////////////////////////////////////////
