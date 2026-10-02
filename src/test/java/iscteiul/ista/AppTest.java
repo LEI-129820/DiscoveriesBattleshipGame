@@ -5,15 +5,20 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ * Teste unitário simples da aplicação {@link App}, escrito em JUnit 3.
+ * <p>
+ * Por agora contém apenas um teste de arranque, que serve para confirmar que
+ * a configuração dos testes do projeto (Maven e JUnit) está a funcionar.
+ *
+ * @author LEI-129851
  */
 public class AppTest
-    extends TestCase
+        extends TestCase
 {
     /**
-     * Create the test case
+     * Cria o caso de teste.
      *
-     * @param testName name of the test case
+     * @param testName nome do caso de teste
      */
     public AppTest( String testName )
     {
@@ -21,7 +26,9 @@ public class AppTest
     }
 
     /**
-     * @return the suite of tests being tested
+     * Devolve o conjunto de testes desta classe.
+     *
+     * @return a suite com todos os testes de {@link AppTest}
      */
     public static Test suite()
     {
@@ -29,7 +36,8 @@ public class AppTest
     }
 
     /**
-     * Rigourous Test :-)
+     * Teste de arranque: verifica apenas que a infraestrutura de testes
+     * executa corretamente (a asserção é sempre verdadeira).
      */
     public void testApp()
     {
