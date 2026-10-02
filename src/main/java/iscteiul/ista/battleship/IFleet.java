@@ -18,7 +18,6 @@ public interface IFleet {
      * Como a verificação é {@code ships.size() <= FLEET_SIZE}, a frota aceita
      * até {@code FLEET_SIZE + 1} navios (11, o total de navios do jogo).
      */
-     */
     Integer FLEET_SIZE = 10;
 
     /**
