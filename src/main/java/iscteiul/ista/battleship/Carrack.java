@@ -12,7 +12,10 @@ package iscteiul.ista.battleship;
  * @see Ship
  */
 public class Carrack extends Ship {
+    /** Dimensão da nau, isto é, o número de posições que ocupa. */
     private static final Integer SIZE = 3;
+
+    /** Nome (categoria) deste tipo de navio. */
     private static final String NAME = "Nau";
 
     /**

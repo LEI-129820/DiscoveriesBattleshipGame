@@ -19,10 +19,19 @@ import java.util.List;
  */
 public abstract class Ship implements IShip {
 
+    /** Identificador do tipo de navio galeão, usado em {@link #buildShip}. */
     private static final String GALEAO = "galeao";
+
+    /** Identificador do tipo de navio fragata, usado em {@link #buildShip}. */
     private static final String FRAGATA = "fragata";
+
+    /** Identificador do tipo de navio nau, usado em {@link #buildShip}. */
     private static final String NAU = "nau";
+
+    /** Identificador do tipo de navio caravela, usado em {@link #buildShip}. */
     private static final String CARAVELA = "caravela";
+
+    /** Identificador do tipo de navio barca, usado em {@link #buildShip}. */
     private static final String BARCA = "barca";
 
     /**
@@ -60,9 +69,16 @@ public abstract class Ship implements IShip {
     }
 
 
+    /** Categoria (nome) do navio. */
     private String category;
+
+    /** Orientação do navio na grelha. */
     private Compass bearing;
+
+    /** Posição de referência do navio. */
     private IPosition pos;
+
+    /** Posições da grelha ocupadas pelo navio, preenchidas pelas subclasses. */
     protected List<IPosition> positions;
 
 
