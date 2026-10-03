@@ -12,7 +12,10 @@ package iscteiul.ista.battleship;
  * @see Ship
  */
 public class Frigate extends Ship {
+    /** Dimensão da fragata, isto é, o número de posições que ocupa. */
     private static final Integer SIZE = 4;
+
+    /** Nome (categoria) deste tipo de navio. */
     private static final String NAME = "Fragata";
 
     /**

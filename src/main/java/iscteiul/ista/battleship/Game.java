@@ -6,18 +6,28 @@ import java.util.List;
 /**
  * Implementação da interface {@link IGame} para o Discoveries Battleship Game.
  * Esta classe gere a lógica e o estado de uma partida na época dos Descobrimentos,
- * controlando a frota numa grelha de 10x10 quadrados, os disparos efetuados e 
+ * controlando a frota numa grelha de 10x10 quadrados, os disparos efetuados e
  * as estatísticas de jogo (navios históricos afundados, disparos inválidos, etc.).
  *
  * @author fba
  */
 public class Game implements IGame {
+    /** Frota sobre a qual são efetuados os disparos. */
     private IFleet fleet;
+
+    /** Posições dos disparos válidos já efetuados, sem repetições. */
     private List<IPosition> shots;
 
+    /** Número de disparos inválidos (fora do tabuleiro). */
     private Integer countInvalidShots;
+
+    /** Número de disparos repetidos (numa posição já atingida antes). */
     private Integer countRepeatedShots;
+
+    /** Número de disparos que acertaram num navio. */
     private Integer countHits;
+
+    /** Número de navios afundados. */
     private Integer countSinks;
 
     /**
@@ -123,11 +133,28 @@ public class Game implements IGame {
         return floatingShips.size();
     }
 
+    /**
+     * Verifica se a posição de um disparo está dentro dos limites do tabuleiro.
+     * <p>
+     * A verificação usa {@code <= Fleet.BOARD_SIZE}, pelo que também aceita o
+     * índice 10, que já está fora de uma grelha 10x10 (índices de 0 a 9).
+     *
+     * @param pos posição do disparo a validar
+     * @return {@code true} se a linha e a coluna estão dentro dos limites
+     *         verificados, {@code false} caso contrário
+     */
     private boolean validShot(IPosition pos) {
         return (pos.getRow() >= 0 && pos.getRow() <= Fleet.BOARD_SIZE && pos.getColumn() >= 0
                 && pos.getColumn() <= Fleet.BOARD_SIZE);
     }
 
+    /**
+     * Verifica se já foi efetuado um disparo na posição indicada.
+     *
+     * @param pos posição do disparo a verificar
+     * @return {@code true} se a posição já consta da lista de disparos anteriores,
+     *         {@code false} caso contrário
+     */
     private boolean repeatedShot(IPosition pos) {
         for (int i = 0; i < shots.size(); i++)
             if (shots.get(i).equals(pos))
