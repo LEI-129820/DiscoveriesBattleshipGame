@@ -56,3 +56,20 @@ Podes explorar mais sobre as embarcações utilizadas na época dos Descobriment
 - Java
 - Git / GitHub
 - IntelliJ IDEA Ultimate
+
+## 📖 Documentação (Javadoc)
+
+O código está documentado com Javadoc. As páginas HTML geradas estão na pasta [`docs/`](docs/); para as ver, abra `docs/index.html` no browser.
+
+### Como gerar a documentação no IntelliJ IDEA
+
+1. Vá a **Tools** → **Generate JavaDoc...**
+2. Defina as seguintes configurações:
+    * **Scope:** `Whole project`
+    * **Output directory:** `<pasta do projeto>/docs`
+    * **Other command line arguments:** `-encoding UTF-8 -charset UTF-8 -docencoding UTF-8`
+3. Clique em **Generate** e abra `docs/index.html`.
+
+### Como documentar uma classe ou método
+
+Escreva `/**` por cima da declaração e carregue em **Enter**: o IntelliJ gera automaticamente o esqueleto com `@param`, `@return` e `@throws`.
