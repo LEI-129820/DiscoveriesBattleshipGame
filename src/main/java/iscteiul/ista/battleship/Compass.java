@@ -10,6 +10,7 @@ package iscteiul.ista.battleship;
 public enum Compass {
     NORTH('n'), SOUTH('s'), EAST('e'), WEST('o'), UNKNOWN('u');
 
+    /** Carácter que representa a orientação. */
     private final char c;
 
     /**

@@ -11,7 +11,10 @@ package iscteiul.ista.battleship;
  * @see Ship
  */
 public class Barge extends Ship {
+    /** Dimensão da barca, isto é, o número de posições que ocupa. */
     private static final Integer SIZE = 1;
+
+    /** Nome (categoria) deste tipo de navio. */
     private static final String NAME = "Barca";
 
     /**
