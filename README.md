@@ -22,7 +22,7 @@ Basic academic version of Battleship game to build upon.
 
 ## Sobre o Projeto
 
-Este é um projeto desenvolvido no âmbito da unidade curricular de Engenharia de Software (ISCTE, 2026/2027), que consiste na implementação do jogo Batalha Naval, numa versão temática inspirada na época dos Descobrimentos — Discoveries Battleship Game. A documentação foi feita com Javadoc e as páginas HTML geradas no IntelliJ ficam na pasta docs. O backlog do projeto foi gerido em Issues do GitHub, com user stories e etiquetas de prioridade.
+Este é um projeto desenvolvido no âmbito da unidade curricular de Engenharia de Software (ISCTE, 2026/2027), que consiste na implementação do jogo Batalha Naval, numa versão temática inspirada na época dos Descobrimentos — Discoveries Battleship Game. O backlog do projeto foi gerido em Issues do GitHub, com user stories e etiquetas de prioridade. A documentação foi feita com Javadoc e as páginas HTML geradas no IntelliJ ficam na pasta docs. O repositório usa GitHub Actions para sincronizar etiquetas e notificar os revisores dos Pull Requests.
 
 ## 🛳️ Frota
 
@@ -106,3 +106,5 @@ O código está documentado com Javadoc. As páginas HTML geradas estão na past
 ### Como documentar uma classe ou método
 
 Escreva `/**` por cima da declaração e carregue em **Enter**: o IntelliJ gera automaticamente o esqueleto com `@param`, `@return` e `@throws`.
+
+
