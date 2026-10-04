@@ -13,3 +13,5 @@
 - **Git Flow:** `main`, `develop`, `feature/*`, `release/*`, `hotfix/*`. Mais estruturado.
 - **GitHub Flow:** `main` e ramos curtos por funcionalidade, integrados por PR. Mais simples.
 - **O nosso grupo** usa o GitHub Flow.
+
+- experimentei merge
