@@ -57,6 +57,39 @@ Podes explorar mais sobre as embarcações utilizadas na época dos Descobriment
 - Git / GitHub
 - IntelliJ IDEA Ultimate
 
+## 🔀 Reflexão: trabalhar via web vs via IDE
+
+Ao longo das duas partes do guião usámos o Git de duas formas: pela plataforma web do GitHub e pelo IntelliJ IDEA (com o terminal integrado). As duas chegam ao mesmo repositório, mas servem para coisas diferentes.
+
+### Via plataforma web (GitHub)
+
+Usámo-la sobretudo para **gerir e colaborar**: criar o *product backlog* em Issues com etiquetas, abrir e rever Pull Requests, aprovar e fazer merge, correr o GitHub Actions (Sync Labels e a notificação de revisores) e consultar o grafo em Insights → Network.
+
+- **Vantagens:** não exige instalação, mostra de forma visual o que mudou em cada PR e é o sítio natural para a revisão e para a gestão do backlog. Também permitiu resolver um conflito simples (no `pom.xml`) com o editor de conflitos.
+- **Limitações:** é pouco prática para alterar vários ficheiros de uma vez, não compila nem corre testes, e o editor web não ajuda a perceber o impacto de uma alteração no resto do código.
+
+### Via IDE (IntelliJ IDEA) e linha de comandos
+
+Usámo-la para **desenvolver e documentar**: clonar o repositório, criar ramos, escrever o Javadoc, gerar as páginas HTML em `docs/`, fazer commits de vários ficheiros e dar push.
+
+- **Vantagens:** tem compilação, navegação no código, geração de Javadoc e uma ferramenta visual de resolução de conflitos. A linha de comandos dá controlo total sobre operações como `stash`, `rebase` e `tag`, e deixa um histórico de commits mais cuidado.
+- **Limitações:** exige configuração (JDK, Maven, autenticação) e uma curva de aprendizagem maior. Não substitui a web para a gestão do backlog e a revisão de PRs.
+
+### Quando preferir cada abordagem
+
+| Situação | Abordagem preferível |
+|---|---|
+| Criar e priorizar user stories, etiquetas e Issues | Web |
+| Rever um Pull Request e aprovar o merge | Web |
+| Correções pequenas (uma frase no README, um typo) | Web |
+| Escrever código, Javadoc ou testes | IDE |
+| Alterações em vários ficheiros, com commits organizados | IDE |
+| Conflitos complexos, `rebase`, `stash`, tags | IDE / linha de comandos |
+
+### Conclusão
+
+Não se trata de escolher uma só: o fluxo mais eficaz combina as duas. A **web** serve para planear, rever e decidir (Issues, PRs, Actions), e o **IDE** serve para construir e testar (código, Javadoc, conflitos). Foi assim que trabalhámos: cada tarefa nasceu num Issue, foi feita num ramo no IDE e voltou ao `main` por Pull Request revisto por um colega.
+
 ## 📖 Documentação (Javadoc)
 
 O código está documentado com Javadoc. As páginas HTML geradas estão na pasta [`docs/`](docs/); para as ver, abra `docs/index.html` no browser.
